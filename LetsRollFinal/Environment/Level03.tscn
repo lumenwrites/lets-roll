@@ -1,0 +1,17 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://Environment/Level01.tscn" type="PackedScene" id=1]
+
+[node name="Level03" instance=ExtResource( 1 )]
+current_level = 2
+
+[node name="GridMap" parent="." index="1"]
+data = {
+"cells": PoolIntArray( 0, 0, 0, 1, 0, 2, 65535, 0, 1048578, 0, 1, 0, 1, 1, 1, 65535, 1, 655361, 0, 2, 1441793, 1, 2, 1441794, 65535, 2, 655362, -196608, 65525, 5, -196608, 65526, 655360, -196608, 65527, 655360, -262144, 65528, 655360, -262143, 65528, 655360, -196609, 65528, 655360, -262144, 65529, 655360, -262143, 65529, 655360, -196609, 65529, 655360, -262144, 65530, 655360, -262143, 65530, 655360, -196609, 65530, 655360, -131072, 65533, 655364, -65536, 65534, 655364, 0, 65535, 0 )
+}
+
+[node name="DeathZone" parent="." index="3"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -29, 0 )
+
+[node name="VictoryZone" parent="." index="4"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -13, -44 )
